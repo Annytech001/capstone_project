@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+} 
+
+h1 {
+    font-size: 45px;
+    line-height: 2;
+    color: black;
+    
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 0.9;
+    color: black;
+}
+
+h2 span {
+    font-size: 30px;
+    line-height: 0.9;
+    color: red;
+    
+}
+
+h4 {
+    font-size: 20px;
+    color: black;
+}
+
+
+h5 {
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+ }
+
+h6 {
+   font-size: 12px;
+   font-weight: 700;
+   color: black;
+}
+
+p {
+  font-size: 16px;
+  color: rgb(125, 6, 6); 
+  margin: 15px 0 20px 0;
+
+}
+
+
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 0.2s;
+}
+
+
+body {
+    width: 100%;
+    background-color: rgb(149, 232, 167);
+    }
+
+/******Header *******/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 80px;
+    background-color: white;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 9;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 10px 18px;
+    position: relative;
+
+}
+
+#navbar li a,
+#navbar li a.active {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 550;
+    color: #8d6f15;
+    transition: 1s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+       color: rgb(0, 70, 128);
+
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: " ";
+    width: 45px;
+    height: 1px;
+    background-color: green;
+    position: absolute;
+    bottom: -1px;
+    left: 20px;
+
+}
+
+
+
+
+/****************Features**************/
+
+#features {
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+#features h5{
+    color: rgb(220, 9, 9);
+}
+
+#features .pro-container {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#features .pro {
+    width: 23%;
+    min-width:250px;
+    padding: 10px 12px;
+    border: 1px solid #dfd9d9;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0. 0.07);
+    margin: 17px 12px;
+    position: relative;
+    transition: 0.2s ease;
+
+}
+
+#features .pro img {
+    width: 100%;
+    border-radius: 25px;
+    
+}
+
+#features .pro .des {
+    text-align: start;
+    padding: 10px 0;
+    
+}
+
+#features .pro .des span {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+#features .pro .des h5 {
+    color: black;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 78px;
+    font-weight: 200;
+    
+}
+
+#features .pro .des h2 {
+    color: rgb(54, 6, 98);
+    font-size: 24px;
+    padding-top: 7px;
+    padding-bottom: 78px;
+}
+
+
+#features .pro .des p {
+    font-size: 11px;
+    color: rgba(0, 3, 2, 0.7);
+
+}
+
+#features .pro .des h6 {
+    padding-top: 7px;
+    font-size: 12px;
+    color: #1a1a1a;
+    font-weight: 700;
+
+}
+
+
+/**********Features ********/
+
+
+#features {
+    text-align: center;
+    padding-top: 60px;
+}
+
+#features h5{
+    color: green;
+}
+
+
+.white {
+    display: flex;
+    width: 40%;
+    margin-top: 70px;
+    padding: 15px;
+    padding-left: 30px;
+    margin-left: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+
+.read-more {
+    font-size: 14px;
+    font-weight: 600;
+    color: none;
+    background-color: rgba(5, 20, 60, 0.2);
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    padding: 12px 24px 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+    width: 200px;
+    height: 35px;
+    
+}
+
+button:hover {
+    background-color: white;
+    color: green;
+}
