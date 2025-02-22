@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="login_sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2 id="form-title">Hello! welcome back <br> Login</h2>
+            <form id="auth-form">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="google-signup">
+                    <button class="google-btn">
+                        <i class="fa-brands fa-google"></i> Sign up with Google
+                    </button>
+                </div>
+                <p class="toggle-text">Don't have an account? <span id="toggle">Sign up</span></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 HavenFarms. All Rights Reserved.</p>
+            <p>Email: support@havenfarms.com | Phone: +2348102716110</p>
+            <p>Follow us on: 
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a> | 
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a> | 
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="login_sign.js"></script>
+</body>
+</html>
