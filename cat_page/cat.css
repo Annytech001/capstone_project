@@ -305,7 +305,7 @@ section{
 }
 
 .header .logo i{
-    color: var(--green);
+    color: var white;
 }
 
 .header .navbar a{
