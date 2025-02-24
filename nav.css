@@ -299,6 +299,25 @@ section{
     color: white;
 }
 
+/* Footer */
+footer {
+    background: #0a321c;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 /**** media queries*/
 
