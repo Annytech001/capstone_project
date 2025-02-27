@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment page</title>
+  <link rel="stylesheet" href="./Payment.css">
+
+  <script>
+    function togglePaymentFields() {
+        const paymentMethod = document.getElementById("payment-method").value;
+        document.getElementById("card-details").classList.toggle("hidden", paymentMethod !== "card");
+        document.getElementById("bank-details").classList.toggle("hidden", paymentMethod !== "bank");
+        document.getElementById("wallet-details").classList.toggle("hidden", paymentMethod !== "wallet");
+    }
+</script>
+
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Let's make it official 😉 💳 </h2>
+    <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="payment-method">Payment Method</label>
+        <select id="payment-method" name="payment-method" onchange="togglePaymentFields()" required>
+            <option value="card">Credit/Debit Card</option>
+            <option value="bank">Bank Transfer</option>
+            <option value="wallet">Digital Wallet</option>
+        </select>
+
+        <div id="card-details">
+            <label for="card">Card Number</label>
+            <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required>
+
+            <label for="expiry">Expiry Date</label>
+            <input type="month" id="expiry" name="expiry" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+        </div>
+
+        <div id="bank-details" class="hidden">
+            <label for="bank-name">Bank Name</label>
+            <input type="text" id="bank-name" name="bank-name" placeholder="Enter bank name">
+
+            <label for="account-number">Account Number</label>
+            <input type="text" id="account-number" name="account-number" placeholder="Enter account number">
+        </div>
+
+        <div id="wallet-details" class="hidden">
+            <label for="wallet-provider">Wallet Provider</label>
+            <input type="text" id="wallet-provider" name="wallet-provider" placeholder="Enter wallet name">
+
+            <label for="wallet-id">Wallet ID</label>
+            <input type="text" id="wallet-id" name="wallet-id" placeholder="Enter wallet ID">
+        </div>
+
+        <button type="submit">Pay Now</button>
+    </form>
+</div>
+</body>
+</html>
