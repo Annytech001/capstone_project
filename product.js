@@ -10,8 +10,27 @@ document.getElementById('categoryFilter').addEventListener('change', function() 
   });
 });
 
-document.querySelectorAll('.add-to-cart').forEach(button => {
-  button.addEventListener('click', function() {
-      alert('Product added to cart!');
+// document.querySelectorAll('.fa-shopping-cart').forEach(button => {
+//   button.addEventListener('click', function() {
+//       alert('Product added to cart!');
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cartButtons = document.querySelectorAll(".fa-shopping-cart");
+
+  cartButtons.forEach(button => {
+      button.addEventListener("click", function () {
+          window.location.href = "/payment.html"; // Change to your actual payment page path
+      });
   });
 });
+
+let shoppingCart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () =>{
+    shoppingCart.classList.toggle('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
