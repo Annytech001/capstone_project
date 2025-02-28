@@ -1,109 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- *******  Link To Custom CSS Style Sheet  ******* -->
+    <link rel="stylesheet" type="text/css" href="/Review_page/Review.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="Review.css" />
-    <title>Farm Products- Review Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Review Page</title>
   </head>
   <body>
-    <header>
-      <header class="header">
 
-        <a href="/index.html" class="logo"><i class="fas fa-tractor"></i> HAVEN FARMS</a>
+    <header class="header">
 
-        <nav class="navbar">
-            <a href="/index.html">Home</a>
-            <a href="/Feature_page/images/feature.html">Features</a>
-            <a href="/product.html">Products</a>
-            <a href="/cat_page/cat.html">Categories</a>
-            <a href="#reviews">Reviews</a>
-            <a href="/Blog.html">Blogs</a>
-            <a href="/contact_form/contact.html">Contact</a>
-        </nav>
+      <a href="/index.html" class="logo"><img class="logoimg" src="/Nav_bar/images/Heaven (3).png"/> HAVEN FARMS</a>
+      <nav class="navbar">
+          <a href="/index.html">Home</a>
+          <a href="/About Page/about.html">About Us</a>
+          <a href="/Feature_page/images/feature.html">Features</a>
+          <a href="/product.html">Products</a>
+          <a href="/Review_page/Review.html">Reviews</a>
+          <a href="/Blog.html">Blogs</a>
+          <a href="/contact_form/contact.html">Contact</a>
+      </nav>
 
-        <div class="icons">
-            <div class="fas fa-bars" id="menu-btn"></div>
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-user" id="login-btn"></div>
-        </div>
-      </header>
-    
-      <div class="container">
-        <div class="container_left">
-          <h1>Read what our customers love about us</h1>
-          <p>
-            Over 200 agribusinesses trust us to improve the user experience of
-            their farm products and services. Here are some of the reviews
-          </p>
-          <p>
-            We have helped companies increase their revenue by 50% in the first
-            3 months of using our services. We are committed to helping you
-            grow.
-          </p>
-          <button>Read our success stories</button>
-        </div>
-        <div class="container_right">
-          <div class="card">
-            <img src="/Review_page/images/lady 2.jpg" alt="user" />
-            <div class="card_content">
-              <span><i class="ri-double-quotes-l"></i></span>
-              <div class="card__details">
-                <p>
-                  We had a great time collaborating with the Haven team. They
-                  have my high recommendation!
-                </p>
-                <h4>-Anita John</h4>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="/Review_page/images/man 5.jpg" alt="user" />
-            <div class="card_content">
-              <span><i class="ri-double-quotes-l"></i></span>
-              <div class="card__details">
-                <p>
-                  The team drastically improved our product's user experience &
-                  increased our revenue by 70% in the first 3 months.
-                </p>
-                <h4>-Marcus Stephen</h4>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="/Review_page/images/lady 3.jpg" alt="user" />
-            <div class="card_content">
-              <span><i class="ri-double-quotes-l"></i></span>
-              <div class="card__details">
-                <p>
-                  I absolutely love the Haven team. They are very professional
-                  and always deliver on time. I highly recommend the Haven team.
-                </p> 
-                <h4>-Grace Mark</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>  
+      <div class="icons">
+          <div class="fas fa-bars" id="menu-btn"></div>
+          <div class="fas fa-search" id="search-btn"></div>
+          <div class="fas fa-shopping-cart" id="cart-btn"></div>
   
-  </body>
-<!-- Footer -->
-  <footer>
-    <div class="footer-content">
-        <p>&copy; 2025 HavenFarms. All Rights Reserved.</p>
-        <p>Email: support@havenfarms.com | Phone: +2348102716110</p>
-        <p>Follow us on: 
-            <a href="#"><i class="fab fa-facebook"></i> Facebook</a> | 
-            <a href="#"><i class="fab fa-instagram"></i> Instagram</a> | 
-            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-        </p>
+       </div> 
+    </header>
+
+
+
+
+
+
+    <div class="testimonials-section">
+      <!-- Section Header Starts -->
+      <header class="section-header">
+        <h1>Read what our customers love about us</h1>
+      </header>
+      <!-- Section Header Ends -->
+
+      <!-- Owl Carousel Slider Starts -->
+      <div class="owl-carousel owl-theme testimonials-container">
+        <!-- Item1 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Haven Farms</h2>
+            </div>
+            <p>
+              We had a great time collaborating with the Haven team. They have
+              my high recommendation!
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="/Review_page/images/man 5.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Peter Bush</span>
+              <span>Software Engineer</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item1 Ends -->
+
+        <!-- Item2 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Haven Farms</h2>
+            </div>
+            <p>
+              The team drastically improved our product's user experience &
+              increased our revenue by 70% in the first 3 months.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="/Review_page/images/image2.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Anita John</span>
+              <span>Product Designer</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item2 Ends -->
+
+        <!-- Item3 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Haven Farms</h2>
+            </div>
+            <p>
+              I absolutely love the Haven team. They are very professional and
+              always deliver on time. I highly recommend the Haven team.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="/Review_page/images/image4.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Victory Bull</span>
+              <span>Mechanical Engineer</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item3 Ends -->
+
+        <!-- Item4 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Haven Farms</h2>
+            </div>
+            <p>
+              I love the Haven team. They are very Experienced, professional and
+              always deliver on time. I highly recommend the Haven team.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="/Review_page/images/lady 2.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Love Paul</span>
+              <span>Farmer</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item4 Ends -->
+
+        <!-- Item5 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Haven Farms</h2>
+            </div>
+            <p>
+              The Haven team are very updated. They are very professional and
+              always deliver on time. I highly recommend the Haven team.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="/Review_page/images/image5.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Light Will</span>
+              <span>Barrister</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item5 Ends -->
+
+        <!-- Item6 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Haven Farms</h2>
+            </div>
+            <p>
+              I highly recommend the Haven team.They sell quality farm product
+              and are very polite when relating with customers
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="/Review_page/images/image6.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Ema Foruate</span>
+              <span>Arist</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item6 Ends -->
+      </div>
+      <!-- Owl Carousel Slider Ends -->
     </div>
-</footer>
+
+    <!--   *****   JQuery Link   *****   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!--   *****   Owl Carousel js Link  *****  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!--   *****   Link To Custom Script File   *****   -->
+    <script type="text/javascript" src="/Review_page/review.js"></script>
+  </body>
 </html>

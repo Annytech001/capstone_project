@@ -264,6 +264,11 @@ section{
     text-decoration: underline;
 }
 
+
+.logoimg{
+    width: 30px;
+    height: 30px;
+}
 .home{
     display: flex;
     align-items: center;
@@ -273,11 +278,6 @@ section{
     background-size: cover;
     padding-top: 17rem;
     padding-bottom: 60rem;
-
-}
-.logoimg{
-    width: 30px;
-    height: 30px;
 }
 .home .content {
     text-align: center;

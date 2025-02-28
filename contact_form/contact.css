@@ -58,7 +58,7 @@ button:hover {
 }
 
 /* Footer */
-footer {
+.footer-content{
     background: #0a321c;
     color: white;
     text-align: center;
@@ -435,7 +435,10 @@ section{
     }
 
 }
-
+.logoimg{
+    width: 30px;
+    height: 30px;
+}
 
 
 
