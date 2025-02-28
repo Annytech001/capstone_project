@@ -321,3 +321,13 @@ section{
     width: 30px;
     height: 30px;
 }
+
+media (max-width: 600px) {
+    .payment-container {
+        padding: 15px;
+        width: 90%;
+    }
+    input, select, button {
+        font-size: 14px;
+    }
+}
