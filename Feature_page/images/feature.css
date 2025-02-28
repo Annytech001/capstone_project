@@ -650,3 +650,8 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.logoimg{
+    width: 30px;
+    height: 30px;
+}

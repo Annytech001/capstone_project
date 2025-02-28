@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"
+    />
+  </head>
+  <body class="body">
+    <div class="about-container">
+      <div class="profile-image">
+        <img src="images/Heave team logo.jpg" alt="Profile Image" />
+      </div>
+
+      <h1 class="our-team-heading">About Us</h2>
+
+      <div class="description">
+        <p>
+          Welcome to Heaven Team Marketplace for Farm Products, a digital
+          platform designed to bridge the gap between farmers and consumers. Our
+          mission is to empower local farmers by providing a direct-to-market
+          solution where they can list and sell fresh produce, dairy, and other
+          farm products with ease.
+        </p>
+        <p>
+          By eliminating unnecessary intermediaries, we ensure fair pricing for
+          farmers while giving buyers access to fresh, high-quality goods
+          straight from the source. Our platform fosters transparency,
+          sustainability, and community-driven commerce, supporting the growth
+          of local agriculture.
+        </p>
+        <p>
+          With features like real-time inventory updates, secure payment
+          options, delivery tracking, and a quality assurance rating system,
+          Heaven Team simplifies the buying and selling process, making it more
+          efficient and rewarding for everyone. Join us in building a
+          sustainable and fair marketplace that benefits farmers, consumers, and
+          the environment.
+        </p>
+      </div>
+
+      <div class="projects-container">
+        <div class="project">
+          <h3 class="project-name">Products Sold</h3>
+          <div class="project-number odometer websites-designed">0</div>
+        </div>
+
+        <div class="project">
+          <h3 class="project-name">Happy Clients</h3>
+          <div class="project-number odometer apps-developed">0</div>
+        </div>
+      </div>
+
+      <h2 class="our-team-heading">Our Team</h2>
+
+      <div class="our-team">
+        <div class="team-member">
+          <img src="images/Glory Bassey.jpg" alt="Glory Bassey" />
+          <div class="designation">
+            <strong>Glory Bassey</strong> <br>Frontend Developer
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/Aminat.jpg" alt="Aminat" />
+          <div class="designation">
+            <strong>Odeyemi Aminat</strong> <br>Frontend Developer
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/Ozioma.jpg" alt="Ozioma E." />
+          <div class="designation">
+            <strong>Ozioma Ehiemenonye</strong> <br>Frontend Developer
+          </div>
+        </div>
+      </div>
+
+      <div class="our-team">
+        <div class="team-member">
+          <img src="images/MJ.jpg" alt="Alice J." />
+          <div class="designation">
+            <strong>Omon Rufus-Mike</strong> <br>Frontend Developer
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/mimisal.jpg" alt="Mimisal" />
+          <div class="designation">
+            <strong>Salako Bolanle</strong> <br>Frontend Developer
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/Timiehin Eniola.jpg" alt="Timilehin Eniola" />
+          <div class="designation">
+            <strong>Timilehin Eniola</strong> <br> Frontend Developer
+          </div>
+        </div>
+      </div>
+      <div class="our-team">
+        <div class="team-member">
+          <img src="images/Esther Elueche.jpg" alt="Alice J." />
+          <div class="designation">
+            <strong>Esther Elueche</strong> <br>Frontend Developer
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/Florence Vincent.jpg" alt="Timilehin Eniola" />
+          <div class="designation">
+            <strong>Florence Vincent</strong><br> Frontend Developer
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+    <script>
+      const websitesDesigned = document.querySelector(".websites-designed");
+      const appsDeveloped = document.querySelector(".apps-developed");
+
+      setTimeout(() => {
+        websitesDesigned.innerHTML = "6463";
+        appsDeveloped.innerHTML = "2474";
+      }, 400);
+    </script>
+  </body>
+</html>

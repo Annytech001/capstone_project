@@ -46,7 +46,7 @@ section{
     display: inline-block;
     padding: .8rem 3rem;
     font-size: 1.7rem;
-    border-radius: .5rem;
+    border-radius: 2rem;
     border: .2rem solid black;
     color: black;
     cursor: pointer;
@@ -54,7 +54,7 @@ section{
 }
 
 .btn:hover{
-    background: rgb(241, 18, 18);
+    background: #90CF44;
     color: #fff;
 }
 
@@ -294,7 +294,7 @@ section{
 }
 
 .home .content h3 span{
-    color: red;
+    color: #90CF44;
 
 }
 
